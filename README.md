@@ -1,6 +1,15 @@
-# Chips
+# Child and Family Services directory
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
+
+## To-dos
+- Fix URL structure to not require /index.html
+- Fix structure so that local and deployed app work with same base href
+- Fix prod build to not return filter error
+- Extract JSON from in-memory-data-services.ts to API call
+- Remove all unused code and modules
+- Possibly integrate into a Sitecore layout rather than be a standalone app
+- Write up development set up instructions
 
 ## Development server
 
