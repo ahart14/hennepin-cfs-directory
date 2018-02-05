@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+.directory input[type="text"] {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: 400px;
+    background-image: url(assets/images/magnifying-glass.png);
+    background-repeat: no-repeat;
+    text-indent: 30px;
+    background-position: 10px 10px;
+    border: 2px solid #cfcfcf;
+}
+.directory td {
+    width: 33%;
+}
+.directory thead>tr>th {
+    cursor: pointer;
+}
+#directory td, #directory th {
+    border: none;
+}
+table#directory {
+    border: none;
+}
+table#directory  tr th, 
+table#directory  tr td {
+    border: none !important;
+    border-bottom: solid 1px #666 !important;
+    padding: 12px 5px;
+}
+
+.sort-icon {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background-position: 3px 3px;
+    background-image: url(assets/images/down-arrow-button.png);
+    background-repeat: no-repeat;
+}
+.sort-icon.sort-chevron-down {
+    background-image: url(assets/images/down-arrow-button.png);
+}
+.sort-icon.sort-chevron-up {
+    background-image: url(assets/images/up-arrow-button.png);
+}
+@media all and (min-width: 1350px) {
+    .content-wrapper {
+        padding-left: 0;
+    }
+}
+@media all and (max-width: 950px) {
+    .location-header,
+    .location-info {
+        display: none;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .phone-info a:link {
+        background: url(assets/images/phone-receiver.png) no-repeat;
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+        padding: 16px 0;
+        display: block;
+    }
+    .email-info a:link {
+        background: url(assets/images/close-envelope.png) no-repeat;
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+        padding: 16px 0;
+        display: block;
+    }
+    .directory td {
+        width: auto;
+        padding: 12px;
+    }
+}
+
+@media all and (min-width: 950px) {
+    .content-wrapper__wide .aside-content aside {
+        float: right;
+        width: 33%;
+        border-left: 1px solid #e0e0e0;
+        border-top: 0;
+        padding-left: 18px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+}
+ul.ngx-pagination {
+    padding-left: 0;
+}
+
+.pagination li a.active, 
+.pagination li a:hover, 
+.pagination__next:hover, 
+.pagination__prev:hover {
+    color: #fff;
+    background-color: #113c66;
+    text-decoration: none;
+    padding: 0.1875rem 0.625rem;
+}
+.pagination li span {
+    text-decoration: none;
+}
+.ngx-pagination a, .ngx-pagination button {
+    text-decoration: none;
+}
+.ngx-pagination .current {
+    background: #0058a4;
+    cursor: default;
+    padding: 0.1875rem 0.625rem;
+}
+.button-back {
+    background: none;
+    border: none;
+    color: #0082df;
+}
+.button-back:before {
+    display: inline-block;
+    content: "<";
+    padding-right: 5px;
+}
+.button-back:hover {
+    text-decoration: underline;
+}

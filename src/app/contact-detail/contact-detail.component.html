@@ -1,0 +1,15 @@
+<div *ngIf="contact">
+  <button class="button-back" (click)="goBack()">Back to directory</button>
+  <h2>{{ contact.name }}</h2>
+  <!-- <p>Job title: {{contact.title}}</p> -->
+  <p>Email: <a href="{{contact.email}}">{{contact.email}}</a></p>
+  <p>Phone: {{contact.phone}}</p>
+  <!-- <p>Fax: {{contact.fax}}</p> -->
+  <p>Location:<br>
+  {{contact.office}}<br>
+  {{contact.address}}<br>
+  Mail code: {{contact.mailcode}}<br>
+  {{contact.city}}, {{contact.state}} {{contact.zip}}<br>
+  </p>
+  <p>Manager: {{contact.manager}}</p>
+</div>

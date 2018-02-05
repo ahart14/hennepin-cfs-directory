@@ -1,0 +1,31 @@
+<div class="directory">
+<input class="form-control" type="text" name="search" placeholder="Search" [(ngModel)]="filter">     
+<table id="directory" summary="This table of Hennepin County Service Area information provides detail about its associated Department, Location and Phone Number (column headings) for each indicated service area (row headings)">
+  <thead>
+  <tr>
+    <th (click)="sort('name')">Name
+        <span class="sort-icon" *ngIf="key =='name'" [ngClass]="{'sort-chevron-up':reverse,'sort-chevron-down':!reverse}"></span>
+    </th>
+    <th class="email-header">Email</th>
+    <th class="phone-header">Phone</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts | orderBy: key : reverse | filter:filter | paginate: { itemsPerPage: 50, currentPage: p }; let i = index">
+      <td>
+        <a routerLink="/detail/{{contact.id}}">
+          {{contact.name}}
+        </a>
+      </td>
+      <td class="email-info">
+        <a href="mailto:{{contact.email}}">{{contact.email}}</a>
+      </td>
+      <td class="phone-info">
+          <a href="tel:{{contact.phone}}">{{contact.phone}}</a>
+      </td>
+    </tr>
+  </tbody>
+  
+</table>
+<div class="pagination"><pagination-controls (pageChange)="p = $event"></pagination-controls></div>
+</div>
