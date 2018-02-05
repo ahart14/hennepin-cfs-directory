@@ -1,4 +1,5 @@
 # Child and Family Services directory
+This app is linked to on hennepin.us at: https://www.hennepin.us/residents/human-services/child-protection-services
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
 
